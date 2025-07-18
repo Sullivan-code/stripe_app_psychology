@@ -182,7 +182,7 @@ const SobreMim: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center mb-16">
           <div className="md:w-1/2">
             <img 
-              src="/images/rapha7.jpg" 
+              src="/images/rp12.jpg" 
               alt="Raphael em sessão sobre hábitos" 
               className="rounded-xl shadow-xl w-full h-auto max-h-96 object-cover"
             />
