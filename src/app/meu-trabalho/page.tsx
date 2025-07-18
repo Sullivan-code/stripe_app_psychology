@@ -78,7 +78,7 @@ const SobreMim: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center mb-16">
           <div className="md:w-1/2">
             <img 
-              src="/images/rapha3.jpg" 
+              src="/images/rapha4.jpg" 
               alt="Raphael em workshop sobre depressão" 
               className="rounded-xl shadow-xl w-full h-auto max-h-96 object-cover"
             />
@@ -118,7 +118,7 @@ const SobreMim: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="/images/rapha4.jpg" 
+                src="/images/rapha3.jpg" 
                 alt="Raphael trabalhando com autoestima" 
                 className="rounded-xl shadow-xl w-full h-auto max-h-96 object-cover"
               />
