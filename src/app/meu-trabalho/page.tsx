@@ -222,7 +222,7 @@ const SobreMim: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="/images/rapha3.jpg" 
+                src="/images/rapha4.jpg" 
                 alt="Raphael trabalhando com insônia" 
                 className="rounded-xl shadow-xl w-full h-auto max-h-96 object-cover"
               />
