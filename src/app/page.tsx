@@ -112,7 +112,7 @@ export default function Home() {
             <p className="text-xl font-semibold text-[#2B2B28] mb-6">
               Pronto para dar o primeiro passo rumo à sua evolução emocional?
             </p>
-            <Link href="/agendamento">
+            <Link href="https://api.whatsapp.com/send?phone=5521992078455">
               <button className="px-8 py-3 bg-[#2B2B28] hover:bg-[#A9D7D3] text-[#F9F6ED] font-bold rounded-lg transition-all duration-300 transform hover:scale-105 hover:text-[#2B2B28]">
                 Agendar Avaliação Inicial
               </button>
