@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Home() {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -9,8 +10,6 @@ export default function Home() {
   const officeImages = Array.from({ length: 8 }, (_, i) => 
     `/images/consultorio/${i + 1}.jpg`
   );
-
-  // ... (funções openImage, closeImage e navigateImage permanecem as mesmas)
 
   return (
     <div className="relative w-full h-full">
@@ -24,7 +23,7 @@ export default function Home() {
 
       {/* Conteúdo Principal */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-16">
-        <div className="max-w-4xl text-center">
+        <div className="max-w-4xl w-full text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#2B2B28] mb-8">
             Raphael Alcantara - Psicólogo Clínico
           </h1>
@@ -121,33 +120,56 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Galeria do Consultório (mantida igual) */}
-      <div className="relative z-10 bg-[#F9F6ED] py-16 px-4 sm:px-6 lg:px-8 rounded-t-3xl shadow-xl mx-4 my-12 border-2 border-[#A9D7D3]">
-        {/* ... conteúdo igual ao anterior */}
-      </div>
-
-      {/* Seção FAQ */}
-      <div className="relative z-10 bg-[#B2E3DC] py-16 px-4 sm:px-6 lg:px-8 rounded-3xl shadow-xl mx-4 my-12 border-2 border-[#A9D7D3]">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#2B2B28]">
-          ❓ Dúvidas Frequentes
-        </h2>
-        <div className="max-w-4xl mx-auto space-y-6">
-          <div className="bg-[#F9F6ED] p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-2">Quantas sessões são necessárias?</h3>
-            <p>A maioria dos casos apresenta melhora significativa em 12-20 sessões, dependendo da complexidade.</p>
-          </div>
-          <div className="bg-[#F9F6ED] p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-2">Você atende online?</h3>
-            <p>Sim, ofereço sessões presenciais e online com a mesma qualidade de atendimento.</p>
-          </div>
-          <div className="bg-[#F9F6ED] p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-2">Como é a primeira sessão?</h3>
-            <p>Na avaliação inicial, identificamos seus principais desafios e traçamos um plano de ação personalizado.</p>
+      {/* Seção de inspiração e imagem */}
+      <div className="relative z-10 w-full flex justify-center px-4 my-8">
+        <div className="bg-[#F9F6ED] py-16 px-6 sm:px-8 rounded-3xl shadow-xl border-2 border-[#A9D7D3] max-w-4xl w-full">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
+                Uma mensagem pra você
+              </h2>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Cuidar da mente é um ato de coragem. Aqui, você encontrará acolhimento, escuta e direção para reconstruir o que te dói. <br />
+                A psicoterapia não é para quem tem problemas, mas para quem tem força de enfrentá-los. <br />
+                E se você chegou até aqui, já deu o primeiro passo.
+              </p>
+            </div>
+            <div>
+              <Image 
+                src="/images/rp11.jpg" 
+                alt="Imagem do consultório Raphael Alcantara"
+                width={600}
+                height={400}
+                className="mx-auto rounded-lg shadow-lg border border-[#A9D7D3]"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Modal das Imagens (mantido) */}
+      {/* Seção FAQ */}
+      <div className="relative z-10 w-full flex justify-center px-4 my-8 pb-16">
+        <div className="bg-[#B2E3DC] py-16 px-6 sm:px-8 rounded-3xl shadow-xl border-2 border-[#A9D7D3] max-w-4xl w-full">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#2B2B28]">
+            ❓ Dúvidas Frequentes
+          </h2>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="bg-[#F9F6ED] p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Quantas sessões são necessárias?</h3>
+              <p>A maioria dos casos apresenta melhora significativa em 12-20 sessões, dependendo da complexidade.</p>
+            </div>
+            <div className="bg-[#F9F6ED] p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Você atende online?</h3>
+              <p>Sim, ofereço sessões presenciais e online com a mesma qualidade de atendimento.</p>
+            </div>
+            <div className="bg-[#F9F6ED] p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Como é a primeira sessão?</h3>
+              <p>Na avaliação inicial, identificamos seus principais desafios e traçamos um plano de ação personalizado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
