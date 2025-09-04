@@ -6,7 +6,6 @@ import {
   LogOutIcon,
   MenuIcon,
   UserIcon,
-  BookOpenIcon,
   MessageCircleIcon,
   InfoIcon,
   ShoppingCartIcon,
@@ -44,14 +43,6 @@ function MobileNavbar() {
               <Button className="flex items-center gap-3 justify-start w-full text-gray-800 bg-[#B2E3DC] hover:bg-[#A3D1CC] transition-all duration-300">
                 <HomeIcon className="w-4 h-4" />
                 Home
-              </Button>
-            </Link>
-
-            {/* Biblioteca */}
-            <Link href="/biblioteca">
-              <Button className="flex items-center gap-3 justify-start w-full text-gray-800 bg-[#B2E3DC] hover:bg-[#A3D1CC] transition-all duration-300">
-                <BookOpenIcon className="w-4 h-4" />
-                Biblioteca
               </Button>
             </Link>
 

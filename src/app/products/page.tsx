@@ -8,7 +8,7 @@ export default async function ProductsPage() {
 
   return (
     <div>
-      <h1> All Products </h1>
+      <h1 className="text-center"> Aqui você encontra diversos produtos relacionados à Psicologia. </h1>
       <ProductList products={products.data} />
     </div>
   );

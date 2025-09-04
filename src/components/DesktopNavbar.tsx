@@ -4,7 +4,6 @@ import {
   BellIcon, 
   HomeIcon, 
   UserIcon, 
-  BookOpenIcon, 
   MessageCircleIcon, 
   InfoIcon,
   ShoppingCartIcon,
@@ -31,19 +30,11 @@ function DesktopNavbar() {
         </Button>
       </Link>
 
-      {/* Biblioteca */}
-      <Link href="/biblioteca">
-        <Button className="flex items-center gap-2 text-gray-800 bg-[#B2E3DC] transition-all duration-300 hover:bg-[#A9D7D3]">
-          <BookOpenIcon className="w-4 h-4" />
-          <span className="hidden lg:inline">Biblioteca</span>
-        </Button>
-      </Link>
-
-      {/* Products */}
+      {/* Produtos */}
       <Link href="/products">
         <Button className="flex items-center gap-2 text-gray-800 bg-[#B2E3DC] transition-all duration-300 hover:bg-[#A9D7D3]">
           <BoxesIcon className="w-4 h-4" />
-          <span className="hidden lg:inline">Products</span>
+          <span className="hidden lg:inline">Produtos</span>
         </Button>
       </Link>
 
@@ -60,14 +51,6 @@ function DesktopNavbar() {
         <Button className="flex items-center gap-2 text-gray-800 bg-[#B2E3DC] transition-all duration-300 hover:bg-[#A9D7D3]">
           <MessageCircleIcon className="w-4 h-4" />
           <span className="hidden lg:inline">Depoimentos</span>
-        </Button>
-      </Link>
-
-      {/* Fale Conosco */}
-      <Link href="/fale-conosco">
-        <Button className="flex items-center gap-2 text-gray-800 bg-[#B2E3DC] transition-all duration-300 hover:bg-[#A9D7D3]">
-          <MessageCircleIcon className="w-4 h-4" />
-          <span className="hidden lg:inline">Fale Conosco</span>
         </Button>
       </Link>
 

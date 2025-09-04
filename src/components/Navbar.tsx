@@ -18,7 +18,7 @@ async function Navbar() {
                 className="text-xl font-bold font-mono tracking-wider px-3 py-1 border-2 rounded-lg transition-all duration-500"
                 style={{ color: "#2B2B28", borderColor: "#2B2B28" }}
               >
-                RAn
+                Raphael Alcantara
               </span>
 
               {/* Efeito ao passar o mouse atualizado */}
