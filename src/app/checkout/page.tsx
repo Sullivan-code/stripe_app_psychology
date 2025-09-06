@@ -66,7 +66,7 @@ export default function CheckoutPage() {
           {/* Cart total */}
           <div className="mt-4 border-t pt-2 text-lg font-semibold flex justify-between">
             <span>Total:</span>
-            <span>${(total / 100).toFixed(2)}</span>
+            <span>R${(total / 100).toFixed(2)}</span>
           </div>
         </CardContent>
       </Card>
